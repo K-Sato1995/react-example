@@ -4,6 +4,7 @@ import Counter from './Counter';
 import Home from './Home';
 import TodoList from './TodoList';
 import DataFetch from './DataFetch';
+import HelloWorld from './HelloWorld';
 
 import {
   createBrowserRouter,
@@ -15,7 +16,12 @@ function App() {
     {
       path: '/',
       element: <Home />,
-    },    {
+    },   
+    {
+      path: 'helloworld',
+      element: <HelloWorld />,
+    },
+    {
       path: 'counter',
       element: <Counter />,
     },
